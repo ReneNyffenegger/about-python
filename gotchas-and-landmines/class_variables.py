@@ -1,5 +1,5 @@
 #
-#
+#     http://stackoverflow.com/a/531327/180275
 #
 
 class AAA(object):
