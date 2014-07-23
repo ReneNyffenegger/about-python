@@ -5,6 +5,7 @@ print type( ''               )         # <type 'str'>
 print type( 'bar'            )         # <type 'str'>
 print type(  0               )         # <type 'int'>
 print type(  42              )         # <type 'int'>
+print type(  42.42           )         # <type 'float'>
 print type(  None            )         # <type 'NoneType'>
 print type(lambda a: a       )         # <type 'function'>
 
