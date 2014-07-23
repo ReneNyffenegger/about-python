@@ -1,3 +1,6 @@
+#
+#   http://stackoverflow.com/a/531376/180275
+#
 funcs = []
 
 for x in range(5):
