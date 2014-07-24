@@ -12,4 +12,5 @@ sys.stdout.write('  ')
 for i in range(10):
     sys.stdout.write (str(i) + " ")
 
-print
+print "\n\nsys.prefix = " + sys.prefix
+print "  Compare with distutils.sysocnifg.get_python_lib() and site.getsitepackages()"
