@@ -13,3 +13,9 @@ d = json.loads ('''
 ''')
 
 print d['foo']['42'] # forty-two
+
+# -------------------------------
+
+json_file=open('file.json')
+f=json.load(json_file)
+print f[2][1]            # Yes
