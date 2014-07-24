@@ -14,3 +14,5 @@ for i in range(10):
 
 print "\n\nsys.prefix = " + sys.prefix
 print "  Compare with distutils.sysocnifg.get_python_lib() and site.getsitepackages()"
+
+print "\ngetdefaultencoding: " + sys.getdefaultencoding()
