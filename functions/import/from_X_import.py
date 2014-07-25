@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 from FooModule import module_func_sum
 
 print module_func_sum (38,4)                  # 42

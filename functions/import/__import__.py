@@ -1,4 +1,4 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 FooBarBaz=__import__("FooModule")
 
