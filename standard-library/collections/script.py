@@ -14,3 +14,7 @@ for word in cnt:
 print "\nfor word in cnt.most_common(3)"
 for word in cnt.most_common(3):
     print "  %-10s: %d" % word
+
+print "\nsum(): "
+print "  There are " + str(sum(cnt.values())) + " words in the original string"
+
