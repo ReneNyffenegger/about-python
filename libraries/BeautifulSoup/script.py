@@ -1,7 +1,7 @@
 from   bs4 import BeautifulSoup
 import requests
 
-html_text=Requests.get('https://github.com/ReneNyffenegger/about-python/tree/master/libraries/BeautifulSoup/script.py').text()
+html_text=requests.get('https://github.com/ReneNyffenegger/about-python/tree/master/libraries/BeautifulSoup/script.py').text
 
 soup = BeautifulSoup(html_text)
 
