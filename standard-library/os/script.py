@@ -13,3 +13,7 @@ for var in os.environ:
            print (' ' * 30) + dir
     else:
        print "  %-25s = %s  " % (var, os.environ[var])
+
+print
+print "Expanded $HOME"
+print "  " + os.path.expandvars('$HOME')
