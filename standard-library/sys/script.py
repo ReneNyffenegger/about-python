@@ -16,3 +16,5 @@ print "\n\nsys.prefix = " + sys.prefix
 print "  Compare with distutils.sysocnifg.get_python_lib() and site.getsitepackages()"
 
 print "\ngetdefaultencoding: " + sys.getdefaultencoding()
+
+sys.exit(0)
