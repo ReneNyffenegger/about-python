@@ -10,3 +10,17 @@ for i in ['foo', 'bar 42 baz', 'hello', 'etc', '20' ]:
 
     if re_number.search(i):
        print i + " contains a number"
+    
+    # bar 42 baz contains a number
+    # 20 is a number
+    # 20 contains a number
+
+print "---"
+
+re_numbers = re.compile('\d+')
+
+for found in re_numbers.findall('foo 42 bar 18 baz 19 x'):
+    print found
+    # 42
+    # 18
+    # 19
