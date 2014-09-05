@@ -24,3 +24,11 @@ for found in re_numbers.findall('foo 42 bar 18 baz 19 x'):
     # 42
     # 18
     # 19
+
+print "---"
+
+if re.search('\d\d\d', 'one 234 five six'):
+   print "matched"
+   # matched
+else:
+   print "didn't match"
