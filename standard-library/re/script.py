@@ -35,6 +35,19 @@ else:
 
 print "---"
 
+match = re.search('(\d\d\d|\w\w\w)', 'one 234 five s')
+if match:
+   print match.group()
+   # one
+   print match.group(1)
+   # one
+
+else:
+   print "didn't match"
+
+
+print "---"
+
 for found in re.findall(r'(\w+)\s+(\d+)', 'foo 42 bar 18 baz 19 x'):
     print found[0] + ': ' + found[1]
     # foo: 42
