@@ -32,3 +32,16 @@ if re.search('\d\d\d', 'one 234 five six'):
    # matched
 else:
    print "didn't match"
+
+print "---"
+
+for found in re.findall(r'(\w+)\s+(\d+)', 'foo 42 bar 18 baz 19 x'):
+    print found[0] + ': ' + found[1]
+    # foo: 42
+    # bar: 18
+    # baz: 19
+
+print "---"
+
+print re.sub(r'\d+', 'XX', 'foo 42 bar 18 baz 19 x')
+# foo XX bar XX baz XX x
