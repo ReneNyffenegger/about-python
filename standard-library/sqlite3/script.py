@@ -29,3 +29,12 @@ for row in cur.execute('select * from bar order by a'):
 #  7: seven
 #  9: nine
 # 42: forty-two
+
+print '---'
+# for row in cur.execute('select b from bar where a = ?',   42    ):     # ValueError: parameters are of unsupported type
+# for row in cur.execute('select b from bar where a = ?', ( 42  ) ):     # ValueError: parameters are of unsupported type
+# for row in cur.execute('select b from bar where a = ?',  '42'   ):     # sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
+# for row in cur.execute('select b from bar where a = ?', ('42' ) ):     # sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
+for   row in cur.execute('select b from bar where a = ?', ('42',) ):
+    print row[0]
+    # forty-two
