@@ -2,6 +2,7 @@ print type( []               )         # <type 'list'>
 print type( ['foo', 1 ]      )         # <type 'list'>
 print type( {}               )         # <type 'dict'>
 print type( ''               )         # <type 'str'>
+print type( 1 == 0           )         # <type 'bool'>
 print type( unicode('foo')   )         # <type 'unicode'>
 print type( 'bar'            )         # <type 'str'>
 print type(  0               )         # <type 'int'>
