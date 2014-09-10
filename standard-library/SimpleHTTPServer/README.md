@@ -3,6 +3,12 @@ from the directory in which it is found, a browser pointing at `localhost:8888` 
 [index.html](https://github.com/ReneNyffenegger/about-python/blob/master/standard-library/SimpleHTTPServer/index.html). `index.html` in turn links to `script.py`.
 
 
+Alternatively, you could just enter
+
+    python -m SimpleHTTPServer 7777
+
+on the command line.
+
 
 ## Links
 
