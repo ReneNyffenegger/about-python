@@ -1,3 +1,5 @@
+# python module SimpleHTTPServer
+
 [script.py](https://github.com/ReneNyffenegger/about-python/blob/master/standard-library/SimpleHTTPServer/script.py) creates a most basic WebServer. If the script is started
 from the directory in which it is found, a browser pointing at `localhost:8888` will be served
 [index.html](https://github.com/ReneNyffenegger/about-python/blob/master/standard-library/SimpleHTTPServer/index.html). `index.html` in turn links to `script.py`.
