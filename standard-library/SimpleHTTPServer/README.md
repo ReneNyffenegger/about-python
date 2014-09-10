@@ -4,7 +4,9 @@ from the directory in which it is found, a browser pointing at `localhost:8888` 
 
 
 Alternatively, you could just enter
+
     python -m SimpleHTTPServer 7777
+
 on the command line.
 
 
