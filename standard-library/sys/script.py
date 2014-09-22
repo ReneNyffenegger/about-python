@@ -1,4 +1,7 @@
 #!/usr/bin/python
+#
+#   Links:
+#     ../../misc/stdout_or_file.py
 
 import sys
 
