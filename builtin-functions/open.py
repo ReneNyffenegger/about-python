@@ -1,3 +1,7 @@
+#
+#    Links:
+#      ../misc/stdout_or_file.py
+#
 f_in = open(__file__, 'r')
 
 print "".join( f_in.readlines() )
