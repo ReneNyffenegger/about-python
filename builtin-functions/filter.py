@@ -9,3 +9,6 @@ print filter(starts_with_b, a)
 
 print filter(lambda t: t[0] == 'b', a)
 # ['bar', 'baz']
+
+print filter(None, [0, 'foo', None, 'bar', 'baz']) # Note: 0 and None will be gone...
+# ['foo', 'bar', 'baz']
