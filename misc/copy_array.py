@@ -2,6 +2,8 @@ a      =  [ 'one', 'two', 'three', 'four' ]
 
 # Make a copy of a. Note: not a deep copy because references within
 # point to the same object.
+# In order to make a deep copy, use copy.deepcopy
+#
 a_copy = a[:]
 
 # Create a reference to the array pointed at by 'a'.
