@@ -4,7 +4,7 @@
 #
 f_in = open(__file__, 'r')
 
-print "".join( f_in.readlines() )
+print("".join( f_in.readlines() ))
 
 f_out = open('open.out', 'w')
 f_out.write("Hello world\n")
