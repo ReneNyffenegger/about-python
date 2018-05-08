@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import FooModule as f
 
-print f.BarModule.bar_func_4()
+print (f.BarModule.bar_func_4())
