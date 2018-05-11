@@ -1,5 +1,5 @@
 #
-#    cursor.lastrowid returns tha last inserted rowid
+#    cursor.lastrowid returns the last inserted rowid
 #
 import os
 import sys
