@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
 import sys
@@ -32,9 +33,9 @@ cur.execute('insert into I values (?, ?)' , ( 3 , 32) )
 
 def I(o):
 
-    print "o: {:d}".format(o)
+    print("o: {:d}".format(o))
     for r in cur.execute('select i from I where o = ?', (o ,)):
-        print "  i: {:d}".format(r[0])
+        print("  i: {:d}".format(r[0]))
        
 
 def O():

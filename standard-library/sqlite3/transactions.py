@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sqlite3
 import os
 
@@ -20,6 +21,5 @@ cur.execute("insert into t values (4, 'four')")
 
 db.commit()
 
-
 for row in cur.execute('select * from t order by a'):  
-    print "%2d: %s" % (row[0], row[1])
+    print("%2d: %s" % (row[0], row[1]))

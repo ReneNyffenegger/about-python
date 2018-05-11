@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import os
 import sys
@@ -20,11 +21,11 @@ cur.execute('insert into T values (?)' , ( 'Butterbrot',) )
 cur.execute('insert into T values (?)' , ( 'Säbel'     ,) )
 
 # two records returned
-print '\nselect * from T where a like "%ä%"'
+print('\nselect * from T where a like "%ä%"')
 for r in cur.execute('select * from T where a like "%ä%"'):
-    print "  " + r[0]
+    print("  " + r[0])
 
 # Note: no records returned. (At least not on Windows with Python 2.7)
-print '\nselect * from T where upper(a) like "%Ä%"'
+print('\nselect * from T where upper(a) like "%Ä%"')
 for r in cur.execute('select * from T where upper(a) like "%Ä%"'):
-    print "  " + r[0]
+    print("  " + r[0])

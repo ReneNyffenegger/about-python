@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import sqlite3
 import os.path
 
@@ -22,7 +23,7 @@ cur.executemany('insert into bar values (?, ?)', [
 ])
 
 for row in cur.execute('select * from bar order by a'):  
-    print "%2d: %s" % (row[0], row[1])
+    print("{:2d}: {:s}".format(row[0], row[1]))
 #  2: two
 #  4: four
 #  5: five
@@ -30,11 +31,11 @@ for row in cur.execute('select * from bar order by a'):
 #  9: nine
 # 42: forty-two
 
-print '---'
+print('---')
 # for row in cur.execute('select b from bar where a = ?',   42    ):     # ValueError: parameters are of unsupported type
 # for row in cur.execute('select b from bar where a = ?', ( 42  ) ):     # ValueError: parameters are of unsupported type
 # for row in cur.execute('select b from bar where a = ?',  '42'   ):     # sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
 # for row in cur.execute('select b from bar where a = ?', ('42' ) ):     # sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 1, and there are 2 supplied.
 for   row in cur.execute('select b from bar where a = ?', ('42',) ):
-    print row[0]
+    print(row[0])
     # forty-two

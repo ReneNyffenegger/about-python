@@ -1,3 +1,4 @@
+#!/usr/bin/python
 #
 #    cursor.lastrowid returns the last inserted rowid
 #
