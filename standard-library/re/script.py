@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import re
 
 re_number = re.compile('\d+')
