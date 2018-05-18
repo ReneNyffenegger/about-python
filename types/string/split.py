@@ -1,10 +1,10 @@
-#/usr/bin/python
+#!/usr/bin/python
 
 str="hello world, the famous number is forty-two, is it not?"
 
-print 'str.split()'
+print('str.split()')
 for word in str.split():
-    print '  ' + word
+    print('  ' + word)
 
 #  hello
 #  world,
@@ -17,9 +17,9 @@ for word in str.split():
 #  it
 #  not?
 
-print "str.split(',')"
+print("str.split(',')")
 for part in str.split(','):
-    print '  ' + part
+    print('  ' + part)
 
 #  hello world
 #   the famous number is forty-two
