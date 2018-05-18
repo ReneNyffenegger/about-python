@@ -1,5 +1,9 @@
+#!/usr/bin/python
 import json
 
+#
+#   Reading json data from a string
+#
 d = json.loads ('''
 
   {"foo":{"42":"forty-two",
@@ -12,10 +16,14 @@ d = json.loads ('''
   
 ''')
 
-print d['foo']['42'] # forty-two
+print(d['foo']['42']) # forty-two
 
 # -------------------------------
+#
+#  Reading json data from a file
+#
 
 json_file=open('file.json')
 f=json.load(json_file)
-print f[2][1]            # Yes
+print(f[2][1])            # Yes
+print(f[3]['foo'])        # word
