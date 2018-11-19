@@ -16,4 +16,4 @@ xmldoc = minidom.parseString(xml_data)
 
 
 for bar in xmldoc.getElementsByTagName('bar'):
-    print "id " + bar.attributes['id'].value + " = " + bar.childNodes[0].nodeValue
+    print("id " + bar.attributes['id'].value + " = " + bar.childNodes[0].nodeValue)
