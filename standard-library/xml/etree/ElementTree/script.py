@@ -13,27 +13,24 @@ xml_data = """
 
 root = ET.fromstring(xml_data) # get root
 
-print root.tag # foo
+print(root.tag)# foo
 
-print "Immediate children:"
+print("Immediate children:")
 
 for immediate_child in root:
-  print "  ", immediate_child.tag
-  print "    ", immediate_child.text 
+  print("  ", immediate_child.tag)
+  print("    ", immediate_child.text)
 
   if immediate_child.tag == 'w':
-     print "     l: ", immediate_child.attrib['l']
+     print("     l: ", immediate_child.attrib['l'])
 
   if immediate_child.tag == 'c':
 #    ET.dump(immediate_child)
 
      for i in immediate_child.iter():
-         print "       i: ", i
+         print("       i: ", i)
 
      for s in immediate_child:
-         print "       ", s.text
+         print("       ", s.text)
 
-     print "    ", s.tail  # Y
-
-
-
+     print("    ", s.tail) # Y
