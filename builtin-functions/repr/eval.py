@@ -5,6 +5,7 @@ var = {'foo':  42,
       }
 
 var_repr = repr(var)
+print('type(var_repr) = {:s}'.format(str(type(var_repr)))) # type(var_repr) = <class 'str'>
 
 print(var_repr) # {'foo': 42, 'bar': 'baz'}
     
