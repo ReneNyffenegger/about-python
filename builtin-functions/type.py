@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 print ( type( []                    ))         # <type 'list'>
 print ( type( ['foo', 1 ]           ))         # <type 'list'>
 print ( type( {}                    ))         # <type 'dict'>
