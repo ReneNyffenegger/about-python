@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 print("{} {} {}"                 .format(1, -17, 33)          ) #  1 -17 33
 print("{:4d} {:4d} {:4d}"        .format(1, -17, 33)          ) #     1  -17   33
