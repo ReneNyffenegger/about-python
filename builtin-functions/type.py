@@ -14,6 +14,8 @@ print ( type(  42.42                ))         # <type 'float'>
 print ( type(  None                 ))         # <type 'NoneType'>
 print ( type( lambda a: a           ))         # <type 'function'>
 print ( type( type( 0 )             ))         # <type 'type'>
+print ( type( list                  ))         # <class 'type'>
+print ( type( dict                  ))         # <class 'type'>
 
 print ("---")
 
