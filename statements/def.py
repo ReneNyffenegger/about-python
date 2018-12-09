@@ -1,8 +1,4 @@
-def F0():
-    print ('in F0')
-
-F0()
-# in F0
+#!/usr/bin/python3
 
 def F1(a = 'foo', b='bar', c='baz'):
     print ('in F1')
