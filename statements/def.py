@@ -1,17 +1,5 @@
 #!/usr/bin/python3
 
-def F1(a = 'foo', b='bar', c='baz'):
-    print ('in F1')
-    print ('  a=' + a)
-    print ('  b=' + b)
-    print ('  c=' + c)
-
-F1('one', 'two')
-# in F1
-#   a=one
-#   b=two
-#   c=baz
-
 def F2(a, *b):
     print ('in F2')
     print ('  a : ' + a)
