@@ -1,14 +1,14 @@
-a = ['foo', 'bar', 'baz']
+#!/usr/bin/python3
 
+someList = ['foo', 'bar', 'baz']
 
-enum_a = enumerate(a)
+enumeratedList = enumerate(someList)
 
-print (enum_a)
-# <enumerate object at 0x0139BE18>
+print (type(enumeratedList))
+# <class 'enumerate'>
 
-
-for i, t in enum_a:
-    print("%d %s" % (i, t) )
-    # 0 foo
-    # 1 bar
-    # 2 baz
+for index, element in enumeratedList:
+    print("{:d}: {:s}".format(index, element) )
+# 0: foo
+# 1: bar
+# 2: baz
