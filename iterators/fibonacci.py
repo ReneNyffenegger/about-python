@@ -31,7 +31,13 @@ class Fibonacci():
         return self.curFib
 
 
+#
+# We want 10 fibonacci numbers:
+#
 fib_10 = Fibonacci(10)
 
+#
+# Print the 10 fibonacci numbers:
+#
 for fib in fib_10:
     print(fib)
