@@ -7,9 +7,9 @@ class TQ84():
             self.name = name
 
         def __str__(self):
-           return 'A.Nested, name = ' + self.name
+           return 'TQ84.Nested, name = ' + self.name
 
 n = TQ84.Nested('foo')
 print(n)
 #
-# A.Nested, name = foo
+# TQ84.Nested, name = foo
