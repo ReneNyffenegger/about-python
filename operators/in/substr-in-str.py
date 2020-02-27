@@ -14,3 +14,6 @@ is_substring_contained_in_string('bar', 'foo bar baz')
 
 is_substring_contained_in_string('in' , 'wintertime' )
 # in is a substring of wintertime
+
+is_substring_contained_in_string('BAR' , 'foo bar baz' )
+# BAR is not a substring of foo bar baz
