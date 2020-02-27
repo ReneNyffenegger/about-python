@@ -9,8 +9,8 @@ def is_substring_contained_in_string(substring, string):
 is_substring_contained_in_string('foo', 'hello world')
 # foo is not a substring of hello world
 
-is_substring_contained_in_string('bar', 'for bar baz')
-# bar is a substring of for bar baz
+is_substring_contained_in_string('bar', 'foo bar baz')
+# bar is a substring of foo bar baz
 
 is_substring_contained_in_string('in' , 'wintertime' )
 # in is a substring of wintertime
