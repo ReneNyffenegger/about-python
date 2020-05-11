@@ -1,8 +1,11 @@
 import re
 
-txt = 'abc, def, ghi'
+txt = """\
+Foo, bar and baz. Those three words! Do
+new lines work, too? Yes: they do.\
+"""
 
-x=re.split(', *', txt)
-for y in x:
-    print(y)
+words=re.split('[ .,?;:!\n]+', txt)
 
+for word in words:
+    print(word)
