@@ -2,5 +2,5 @@ lst = ['foo', 'bar', None, 'baz' ]
 
 itr = iter(lst)
 
-while elem := next(itr):
-      print(elem)
+while elm := next(itr):
+      print(elm)
