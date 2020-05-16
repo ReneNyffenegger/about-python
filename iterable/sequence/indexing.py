@@ -24,6 +24,10 @@ print(numbers[5:])
 #
 # ['five', 'six']
 
+print(numbers[1:6:2])
+#
+# ['one', 'three', 'five']
+
 print(numbers[:])
 #
 # ['zero', 'one', 'two', 'three', 'four', 'five', 'six']
