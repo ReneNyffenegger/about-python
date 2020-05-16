@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-
 numbers = [ 1   ,  2   ,  3     ,  4    ,  5    ]
 letters = ['a'  , 'b'  , 'c'    , 'd'   , 'e'   ]
 words   = ['one', 'two', 'three', 'four', 'five']
