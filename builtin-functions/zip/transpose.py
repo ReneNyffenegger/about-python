@@ -6,3 +6,5 @@ numbers = [ ( 'one' , 'two' , 'three'),
 transposed = list(zip(*numbers))
 
 print(transposed)
+#
+#  [('one', 'eins', 'un'), ('two', 'zwei', 'dos'), ('three', 'drei', 'tres')]
