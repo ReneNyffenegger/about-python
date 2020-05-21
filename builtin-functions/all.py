@@ -1,28 +1,27 @@
 a = ['foo', 'bar', 'baz']
 
 
-
 if all(word in ['foo', 'bar'] for word in a):
-   print "yes"
+   print("yes")
 else:
-   print "no"
-
+   print("no")
+#
 #  no
 
-#  -----------------------------
+
 
 if all(word in ['foo', 'bar', 'baz'] for word in a):
-   print "yes"
+   print("yes")
 else:
-   print "no"
-
+   print("no")
+#
 #  yes
 
-#  -----------------------------
+
 
 if all(word in ['foo', 'bar', 'baz', 'loch-ness'] for word in a):
-   print "yes"
+   print("yes")
 else:
-   print "no"
-   
+   print("no")
+#  
 #  yes
