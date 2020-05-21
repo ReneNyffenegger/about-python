@@ -1,22 +1,17 @@
-
-
 a = ['foo', 'bar', 'baz']
 b = ['one', 'two', 'three', 'four']
 
-
-
 if any(word in ['hello', 'bar', 'world'] for word in a):
-   print "yes"
+   print("yes")
 else:
-   print "no"
-
+   print("no")
+#
 #  Yes
 
-#  -----------------------------
 
 if any(word in ['hello', 'bar', 'world'] for word in b):
-   print "yes"
+   print("yes")
 else:
-   print "no"
-
+   print("no")
+#
 #  No
