@@ -1,6 +1,9 @@
-[1,
- 2,
-[3, "Yes", 5],
-{  "one": "number",
-   "foo": "word"} 
+[
+  1,
+  2,
+  [ 3, "Yes", 5 ],
+  {
+    "one": "number",
+    "foo": "word"
+  } 
 ]
