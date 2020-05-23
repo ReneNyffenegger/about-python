@@ -11,13 +11,17 @@ def ensureTypeInDict(t):
            'children': []           # type ids of children
        }
 
-for builtin_name in dir(__builtins__) + ['builtin_function_or_method', 'module']:
+for builtin_name in dir(__builtins__) + ['builtin_function_or_method', 'module', 'function']:
 
     if   builtin_name == 'builtin_function_or_method':
          builtin_obj = type(dir)
 
     elif builtin_name == 'module':
          builtin_obj = __builtins__.__class__
+
+    elif builtin_name == 'function':
+         builtin_obj = (lambda: None).__class__
+
     else:
          builtin_obj = getattr(__builtins__, builtin_name)
 
