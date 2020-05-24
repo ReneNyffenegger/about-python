@@ -32,6 +32,27 @@ import os
 import os.path
 import shutil
 
+def walkTree(under):
+
+    for curDir, dirs, files in os.walk(under):
+     #
+     #  - curDir: a string that contains the relative path to the «current» directory
+     #
+     #  - dirs:   a list of strings, each of which is a directory name that is present
+     #            in the «current» directory.
+     #
+     #  - files:  a list of strings, each of which is a file name that is present
+     #            in the «current» directory.
+     #          
+     #  Note: dirs is not used in this example.
+     #
+
+        depth = curDir.count(os.sep)
+
+        print(f'{depth * "  "}{os.path.basename(curDir)}/')
+
+        for file in files:
+            print(f'{depth * "  "}  {file}')
 
 def createTree(under):
 
@@ -40,15 +61,8 @@ def createTree(under):
     if os.path.isdir(under):
        shutil.rmtree(under)
 
-#   os.chdir(under)
-
     os.mkdir(under)
     os.chdir(under)
-
-
-#   for d in 'dir-1', 'dir-2':
-#       if os.path.isdir(d):
-#          shutil.rmtree(d)
 
     os.makedirs('dir-1/subdir-1-1')
     os.makedirs('dir-1/subdir-1-2')
@@ -75,21 +89,6 @@ def createTree(under):
     with open('dir-2/subdir-2-2/file-2-2.l', 'w'): pass
 
     os.chdir(curDir)
-
-
-def walkTree(under):
-
-    for curDir, dirs, files in os.walk(under):
-     #
-     #  Note: dirs is not used here
-     #
-
-        depth = curDir.count(os.sep)
-
-        print(f'{depth * "  "}{os.path.basename(curDir)}/')
-
-        for file in files:
-            print(f'{depth * "  "}  {file}')
 
 
 testDir = 'test-dir'
