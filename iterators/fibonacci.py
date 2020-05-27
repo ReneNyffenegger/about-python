@@ -3,7 +3,7 @@
 class Fibonacci():
     def __init__(self, howMany):
         self.counter = howMany
-        self.curFib = 0
+        self.curFib  = 0
         self.nextFib = 1
 
     def __iter__(self):
