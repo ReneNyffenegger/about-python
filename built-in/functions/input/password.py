@@ -1,5 +1,7 @@
-username = input('Username: ')
-password = input('Password: ')
+from getpass import getpass
+
+username = input  ('Username: ')
+password = getpass('Password: ')
 
 if username == 'Rene' and password == 'secretGarden':
    print('Bingo')
