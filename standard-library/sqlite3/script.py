@@ -22,14 +22,26 @@ cur.executemany('insert into bar values (?, ?)', [
   (9, 'nine')
 ])
 
-for row in cur.execute('select * from bar order by a'):  
-    print("{:2d}: {:s}".format(row[0], row[1]))
+def generateData():
+    for i in range(4):
+        yield i, '*' * i
+#
+#  0:
+#  1: *
 #  2: two
+#  2: **
+#  3: ***
 #  4: four
 #  5: five
 #  7: seven
 #  9: nine
 # 42: forty-two
+
+
+cur.executemany('insert into bar values (?, ?)', generateData())
+
+for row in cur.execute('select * from bar order by a'):
+    print("{:2d}: {:s}".format(row[0], row[1]))
 
 print('---')
 # for row in cur.execute('select b from bar where a = ?',   42    ):     # ValueError: parameters are of unsupported type
