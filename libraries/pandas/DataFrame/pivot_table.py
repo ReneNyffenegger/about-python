@@ -13,10 +13,10 @@ piv = df.pivot_table(
             values =['vals'],
             aggfunc=numpy.sum)
 
-print type(piv)
+print(type(piv))
 # <class 'pandas.core.frame.DataFrame'>
 
-print piv
+print(piv)
 #      vals
 # c2      X   Y    Z
 # c1

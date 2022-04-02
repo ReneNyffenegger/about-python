@@ -9,7 +9,7 @@ df = pandas.DataFrame(
 
 df.col_1 = df.col_1.map(lambda n: n * n)
 
-print df
+print(df)
 #    col_1 col_2 col_3
 # 0    100   foo     X
 # 1    400   bar     Y

@@ -8,7 +8,7 @@ df = pandas.DataFrame(
 
 df.col_1 = df.col_1.fillna( 999 )
 
-print df
+print(df)
 #    col_1 col_2
 # 0     10  None
 # 1    999     Y
@@ -17,7 +17,7 @@ print df
 
 df.col_2.fillna ( '?', inplace=True )
 
-print df
+print(df)
 #    col_1 col_2
 # 0     10     ?
 # 1    999     Y
