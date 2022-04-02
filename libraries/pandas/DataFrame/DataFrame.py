@@ -6,10 +6,10 @@ df = pandas.DataFrame(
         'col_3': pandas.Series( [  'X',  'Y',  'Z'] )
       })
 
-print type(df)
+print(type(df))
 # <class 'pandas.core.frame.DataFrame'>
 
-print df
+print(df)
 #    col_1 col_2 col_3
 # 0     10   foo     X
 # 1     20   bar     Y
