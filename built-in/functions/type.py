@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 print ( type( []                    ))         # <type 'list'>
 print ( type( ['foo', 1 ]           ))         # <type 'list'>
 print ( type( {}                    ))         # <type 'dict'>
@@ -40,4 +41,4 @@ print ( isinstance(instance_B, class_A))  # True
 print ( isinstance(instance_B, class_B))  # True
 
 
-# print type(  print         )                             # invalid
+print ( type(  print                  ))  # <class 'builtin_function_or_method'>
