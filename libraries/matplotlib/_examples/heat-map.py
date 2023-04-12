@@ -21,4 +21,4 @@ for  x in range(width ):
 
 plt.axis('off')
 # plt.show()
-plt.savefig('img/heatmap.png')
+plt.savefig('img/heat-map.png')
