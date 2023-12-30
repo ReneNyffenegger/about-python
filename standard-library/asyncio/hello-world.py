@@ -8,9 +8,9 @@ async def async_func():
 
 
 co_routine = async_func()
-#
-#  <class 'coroutine'>
 
 print(type(co_routine))
+#
+#  <class 'coroutine'>
 
 asyncio.run(co_routine)
