@@ -28,13 +28,16 @@ async def a(): pass
 aa = a()
 print ( type(aa                       ))  # <class 'coroutine'>
 
-class class_A(object): pass
+class class_A():
+      def method(self): pass
+obj_a = class_A()
 print ( type(class_A                  ))  # <class 'type'>
+print ( type(obj_a.method             ))  # <class 'method'>
 
-instance_A=class_A()
-print ( type(instance_A               ))  # <class '__main__.class_A'>
 
-print ( type(instance_A) is class_A    )  # True
+print ( type(obj_a                    ))  # <class '__main__.class_A'>
+
+print ( type(obj_a) is class_A         )  # True
 
 class class_B(class_A): pass
 
