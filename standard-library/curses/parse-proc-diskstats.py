@@ -38,9 +38,6 @@ def curses_out(stdscr, headers, all_stats):
 
         stdscr.addstr(     line,      1    , dev_stats['device_name'        ])     # Necessary in the first pass only, but for the moment, that's ok
 
-        column = write_num(line, column,  4, dev_stats['reads_completed'    ])
-        column = write_num(line, column, 12, dev_stats['reads_merged'       ])
-        column = write_num(line, column, 12, dev_stats['sectors_read'       ])
         column = write_num(line, column, 11, dev_stats['reads_completed'    ])
         column = write_num(line, column, 11, dev_stats['reads_merged'       ])
         column = write_num(line, column, 11, dev_stats['sectors_read'       ])
