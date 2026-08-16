@@ -3,8 +3,11 @@
 from skyfield.api import load
 
 planets = load('de421.bsp')
-earth, mars = planets['earth'], planets['mars']
-ts = load.timescale()
-t = ts.now()
-ra, dec, distance = earth.at(t).observe(mars).radec()
+earth   = planets['earth' ]
+mars    = planets['mars'  ]
+
+t_now  = load.timescale().now()
+
+ra, dec, distance = earth.at(t_now).observe(mars).radec()
+
 print(ra, dec, distance)
