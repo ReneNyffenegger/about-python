@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def TQ84_decorator(func):
 
     print(f'TQ84_decorator was called for func {func.__name__}')
